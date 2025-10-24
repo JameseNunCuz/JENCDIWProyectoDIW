@@ -10,11 +10,13 @@ body {
 }
 
 .center-container {
+    padding-top: 76vh;
     position: fixed;
     transform: translate(-50%, -50%);
     top: 50vh;
     left: 50vw;
-    max-height: 72vh;
+    max-height: 71vh;
+    height: 71vh;
     overflow: auto;
     display: flex;
     justify-content: center;
@@ -88,6 +90,7 @@ td {
     text-align: center;
     vertical-align: middle;
 }
+
 img {
     max-height: 8vh;
     min-width: 8vh;
