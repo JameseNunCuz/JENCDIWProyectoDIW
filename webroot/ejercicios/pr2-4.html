@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr2-4</title>
+
+    <style>
+        .body {
+            width: 100%;
+            overflow: scroll;
+        }
+
+        .columnas {
+            display: flex;
+        }
+
+        .column {
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .derecha,
+        .izquierda {
+            width: 50%
+        }
+
+        .ej1 p,
+        span {
+            width: fit-content;
+            padding: 1em;
+        }
+
+        .ej1 p {
+            background-color: lightGrey
+        }
+
+        .div1-1 p:first-child {
+            background-color: rgb(88, 88, 216);
+        }
+
+        .div1-1 p:last-child {
+            background-color: brown;
+        }
+
+        ul li:nth-child(2),
+        ul li:nth-child(5) {
+            background-color: red;
+        }
+
+        ul li:nth-child(4) {
+            background-color: rgb(138, 59, 59);
+        }
+
+        .div1-2 p:only-child {
+            background-color: lime;
+        }
+
+        .derecha1 p:first-of-type {
+            background-color: lightblue;
+        }
+
+        .derecha1 div:last-of-type {
+            background-color: yellow;
+        }
+
+        .derecha2 p:nth-of-type(2) {
+            background-color: blue;
+        }
+
+        .derecha2 div:nth-of-type(1) {
+            color: white;
+            background-color: tan;
+        }
+
+        .derecha3 span:only-of-type() {
+            background-color: crimson;
+        }
+
+        .ej1 {
+            height: fit-content;
+            width: 100%
+        }
+
+        /*---Ej2---*/
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        .grid div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: purple;
+            width: 14.5vw;
+            height: 9vw;
+            margin: 1vw;
+        }
+
+        .grid div:nth-child(1) {
+            background-color: green;
+        }
+
+        .grid div:nth-child(6) {
+            background-color: green;
+        }
+
+        .grid div:nth-child(3n):nth-child(-n+18) {
+            background-color: green;
+        }
+
+        .grid div:nth-child(1n):nth-child(n+8):nth-child(-n+20) {
+            background-color: green;
+        }
+
+        .grid div:nth-child(3n):nth-child(n+5):nth-child(n+20) {
+            background-color: green;
+        }
+
+        .grid div:nth-child(3),
+        .grid div:nth-child(12) {
+            background-color: green;
+        }
+
+        .grid div:nth-child(18),
+        .grid div:nth-child(12) {
+            background-color: green;
+        }
+
+
+        /*Ejercicio 3*/
+        .ej3 a {
+            background-color: green;
+            color: white;
+            border-width: 0px;
+            padding: 0.6em
+        }
+
+        .div3-1 {
+            color: white;
+            background-color: grey;
+            padding-bottom: 2em;
+        }
+
+        .div3-2 {
+            background-color: orange;
+            padding-bottom: 2em;
+        }
+
+        .div3-3 {
+            background-color: cyan;
+            padding-bottom: 2em;
+        }
+
+        .botones {
+            display: flex;
+
+            a {
+                margin-right: 2.5em;
+                padding: 0.5em;
+                color: black;
+                font-weight: bold;
+            }
+
+            #tab1 {
+                background-color: magenta;
+            }
+
+            #tab2 {
+                background-color: burlywood;
+            }
+
+            #tab3 {
+                background-color: salmon;
+            }
+        }
+
+        #content1:target,
+        #content2:target,
+        #content3:target {
+            font-family: 'Courier New', Courier, monospace;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ej1">
+        <h1>Ejercicio 1 Pseudo-clases</h1>
+        <div class="columnas">
+            <div class="column izquierda">
+                <h3>:first child y :last-child</h3>
+                <div class="div1-1">
+                    <p>Paragraph 1</p>
+                    <p>Paragraph 2</p>
+                    <p>Paragraph 3</p>
+                    <p>Paragraph 4</p>
+                </div>
+
+                <h3>:nth-child() y :nth-last-child()</h3>
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                    <li>Option 4</li>
+                    <li>Option 5</li>
+                    <li>Option 6</li>
+                </ul>
+
+                <h3>:only-child</h3>
+                <div class="div1-2">
+                    <p>Single paragraph</p>
+                </div>
+            </div>
+
+            <div class="column derecha">
+                <div class="derecha1">
+                    <h3>:first-of-type y :last-of-type</h3>
+                    <p>Paragraph one</p>
+                    <span>Text in span</span>
+                    <p>Paragraph two2</p>
+                    <div style="font-weight: bold">Text in strong</div>
+                    <div>This is a div</div>
+                    <p>Paragraph three</p>
+                </div>
+
+                <div class="derecha2">
+                    <h3>:nth-of-type() y :nth-last-child()</h3>
+                    <p>Paragraph one</p>
+                    <span>Text in span</span>
+                    <p>Paragraph two2</p>
+                    <div style="font-weight: bold">Text in strong</div>
+                    <div>This is a div</div>
+                    <p>Paragraph three</p>
+                </div>
+
+                <div class="derecha3">
+                    <h3>:only-of-type()</h3>
+                    <p>Paragraph one</p>
+                    <span>Text in span</span>
+                    <p>Paragraph two2</p>
+                    <p>Paragraph three</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ej2">
+        <div class="grid">
+            <div><span>1</span></div>
+            <div><span>2</span></div>
+            <div><span>3</span></div>
+            <div><span>4</span></div>
+            <div><span>5</span></div>
+            <div><span>6</span></div>
+
+            <div><span>7</span></div>
+            <div><span>8</span></div>
+            <div><span>9</span></div>
+            <div><span>10</span></div>
+            <div><span>11</span></div>
+            <div><span>12</span></div>
+
+            <div><span>13</span></div>
+            <div><span>14</span></div>
+            <div><span>15</span></div>
+            <div><span>16</span></div>
+            <div><span>17</span></div>
+            <div><span>18</span></div>
+
+            <div><span>19</span></div>
+            <div><span>20</span></div>
+            <div><span>21</span></div>
+            <div><span>22</span></div>
+            <div><span>23</span></div>
+            <div><span>24</span></div>
+
+            <div><span>25</span></div>
+        </div>
+    </div>
+
+    <div class="ej3">
+        <div id="tabs" class="botones">
+            <a id="tab1" class="tab-button" href="#content1">Primero</a>
+            <a id="tab2" class="tab-button" href="#content2">Segundo</a>
+            <a id="tab3" class="tab-button" href="#content3">Tercero</a>
+        </div>
+
+        <div id="content1" class="div3-1">
+            <h2>Articulo UNO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, laudantium molestias suscipit
+                doloribus autem, harum magni expedita sint tempore quaerat rerum. Omnis voluptas eum corrupti ipsum
+                magnam. Alias, quia aspernatur!</p>
+            <a href="#tabs">Volver</a>
+        </div>
+
+        <div id="content2" class="div3-2">
+            <h2>Articulo DOS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, laudantium molestias suscipit
+                doloribus autem, harum magni expedita sint tempore quaerat rerum. Omnis voluptas eum corrupti ipsum
+                magnam. Alias, quia aspernatur!</p>
+            <a href="#tabs">Volver</a>
+        </div>
+
+        <div id="content3" class="div3-3">
+            <h2>Articulo TRES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, laudantium molestias suscipit
+                doloribus autem, harum magni expedita sint tempore quaerat rerum. Omnis voluptas eum corrupti ipsum
+                magnam. Alias, quia aspernatur!</p>
+            <a href="#tabs">Volver</a>
+        </div>
+    </div>
+</body>
+
+</html>

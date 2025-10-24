@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr1-2-3</title>
+    <style>
+        /*Tabla 1*/
+        caption {
+            margin: 1vh 0 1vh;
+            font-size: 2vh;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 0.75vh;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+
+        td {
+            height: 2em;
+            margin: 0;
+            border: 0.2em;
+            border-style: solid;
+        }
+
+        .espacio {
+            background-color: red;
+        }
+
+        /*Tabla 2*/
+        #tabla2 td {
+            border-color: blue;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        /*Tabla div*/
+        .tr {
+            width: 100%;
+            display: inline-table;
+        }
+
+        .td {
+            display: table-cell;
+            border: 0.15em solid darkgreen;
+            padding: 0.2em;
+        }
+
+        .tr1 .td {
+            width: 25%;
+        }
+
+        .tr2 .td {
+            width: 33%;
+        }
+
+        .tr3 .td {
+            width: 10%;
+        }
+
+        .tr4 .td,
+        .tr5 .td {
+            width: 20%;
+        }
+
+        .color {
+            background-color: darkorchid;
+            color: white;
+        }
+
+        .center {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tabla 1-->
+    <table>
+        <caption>Tablas con table</caption>
+        <tr>
+            <td colspan="4">Celda 1 1</td>
+            <td colspan="2">Celda 1 2</td>
+            <td colspan="1">Celda 1 3</td>
+        </tr>
+        <tr class="espacio">
+            <td colspan="7"></td>
+        </tr>
+        <tr>
+            <td colspan="4">Celda 2 1</td>
+            <td colspan="2">Celda 2 2</td>
+            <td colspan="1">Celda 2 3</td>
+        </tr>
+        <tr class="espacio">
+            <td colspan="7"></td>
+        </tr>
+        <tr>
+            <td colspan="4">Celda 3 1</td>
+            <td colspan="2">Celda 3 2</td>
+            <td colspan="1">Celda 3 3</td>
+        </tr>
+        <tr class="espacio">
+            <td colspan="7"></td>
+        </tr>
+        <tr>
+            <td colspan="4">Celda 4 1</td>
+            <td colspan="2">Celda 4 2</td>
+            <td colspan="1">Celda 4 3</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <!--Tabla 2-->
+    <table id="tabla2">
+        <tr>
+            <td colspan="2">1</td>
+            <td colspan="2">1</td>
+            <td colspan="4">1</td>
+        </tr>
+        <tr>
+            <td colspan="4">2</td>
+            <td colspan="4">2</td>
+        </tr>
+        <tr>
+            <td colspan="3">3</td>
+            <td colspan="4">3</td>
+            <td colspan="1">3</td>
+        </tr>
+        <tr>
+            <td colspan="1">4</td>
+            <td colspan="1">4</td>
+            <td colspan="2">4</td>
+            <td colspan="3">4</td>
+            <td colspan="1">4</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <!--Tabla Div-->
+    <h2>Tablas con div</h2>
+    <div>
+        <div class="tr tr1">
+            <div class="td">1</div>
+            <div class="td">11</div>
+            <div class="td">111</div>
+            <div class="td">1111</div>
+        </div>
+        <div class="tr tr2">
+            <div class="td">2</div>
+            <div class="td">222222</div>
+            <div class="td">2222222222</div>
+        </div>
+        <div class="tr tr3">
+            <div class="td">3</div>
+            <div class="td">33</div>
+            <div class="td">333</div>
+            <div class="td">3333</div>
+            <div class="td color center">33333</div>
+            <div class="td center">33333</div>
+            <div class="td">3333</div>
+            <div class="td">333</div>
+            <div class="td">33</div>
+            <div class="td">3</div>
+        </div>
+        <div class="tr tr4">
+            <div class="td">4 1</div>
+            <div class="td">4 2</div>
+            <div class="td">4 3</div>
+            <div class="td">4 4</div>
+            <div class="td">4 5</div>
+        </div>
+        <div class="tr tr5">
+            <div class="td">5 1</div>
+            <div class="td">5 2</div>
+            <div class="td">5 3</div>
+            <div class="td">5 4</div>
+            <div class="td">5 5</div>
+        </div>
+    </div>
+</body>

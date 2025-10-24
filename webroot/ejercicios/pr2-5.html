@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr2-5</title>
+    <style>
+        form {
+            max-width: 500px;
+            background-color: #ffffdd;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 5px 10px;
+            align-items: center;
+        }
+
+        .section-media {
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .media-group {
+            background-color: rgb(137, 137, 187);
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 60px;
+        }
+
+        .option-group {
+            grid-column: 1 / span 2;
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 150px;
+            padding: 10px;
+            margin: 15px auto 0 auto;
+            background-color: #dc3545;
+            border-radius: 3px;
+        }
+
+        #fieldset1 input:nth-of-type(even) {
+            background-color: lightcoral;
+        }
+
+        #fieldset1 input:nth-of-type(odd) {
+            background-color: lightgreen;
+        }
+
+        #fieldset1 input:first-of-type {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset id="fieldset1">
+            <legend>Pseudo-clases en formularios</legend>
+
+            <label for="nombreAutofocus">:autofocus</label>
+            <input type="text" id="nombreAutofocus" placeholder="Nombre" autofocus>
+
+            <label for="apellidos">:required</label>
+            <input type="text" id="apellidos" placeholder="Apellidos">
+
+            <label for="email">:valid/:invalid</label>
+            <input type="email" id="email" placeholder="mail@main.com">
+
+            <label for="password">Password (8 min):</label>
+            <input type="password" id="password" minlength="8">
+        </fieldset>
+
+        <fieldset class="section section-media">
+            <legend>-file, date, color, time-</legend>
+
+            <div class="media-group" style="grid-column: 1 / 2;">
+                <label for="archivo">Archivo a subir:</label>
+                <input type="file" id="archivo">
+            </div>
+
+            <div class="media-group" style="grid-column: 2 / 3;">
+                <label for="color">Elige color:</label>
+                <input type="color" id="color">
+            </div>
+
+            <div class="media-group" style="grid-column: 1 / 2;">
+                <label for="fechaPedido">Fecha pedido</label>
+                <input type="date" id="fechaPedido">
+            </div>
+
+            <div class="media-group" style="grid-column: 2 / 3;">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>-:checked, :in-range / :out-of-range-</legend>
+
+            <div class="option-group">
+                <label class="field-label" style="width: auto;">Sexo:</label>
+                <input type="radio" id="hombre" name="sexo" value="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" name="sexo" value="mujer" checked>
+                <label for="mujer">Mujer</label>
+            </div>
+
+            <div class="option-group">
+                <label class="field-label" style="width: auto;">Aficiones:</label>
+                <input type="checkbox" id="musica"> <label for="musica">Música</label>
+                <input type="checkbox" id="deportes"> <label for="deportes">Deportes</label>
+                <input type="checkbox" id="lectura"> <label for="lectura">Lectura</label>
+                <input type="checkbox" id="cocina"> <label for="cocina">Cocina</label>
+            </div>
+
+            <label for="edad" class="field-label">Edad (1-120):</label>
+            <div class="age-search-group">
+                <input type="number" id="edad" value="1" min="1" max="120">
+                <label for="buscar" class="field-label">Buscar</label>
+                <input type="search" id="buscar">
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar datos">
+    </form>
+</body>
+
+</html>

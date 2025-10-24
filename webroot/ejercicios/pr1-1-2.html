@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1-1-2</title>
+    <style>
+        /*Estilos tabla*/
+        caption {
+            margin: 1vh 0 1vh;
+            font-size: 2vh;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 0.75vh;
+            table-layout: fixed
+        }
+
+        td {
+            height: 5vh;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+
+        /*Estilos iniciales*/
+        .c2,
+        .c4,
+        .c6 {
+            display: none;
+        }
+
+        .td1 {
+            background-color: #FF0000;
+        }
+
+        .td2 {
+            background-color: #00FF00;
+        }
+
+        .td3 {
+            background-color: #0000FF;
+        }
+
+        /*Estilos hover*/
+        .td1:hover {
+            background-color: #00FFFF;
+
+            .c1 {
+                display: none;
+            }
+
+            .c2 {
+                display: inline;
+            }
+        }
+
+        .td2:hover {
+            background-color: #FF00FF;
+
+            .c3 {
+                display: none;
+            }
+
+            .c4 {
+                display: inline;
+            }
+        }
+
+        .td3:hover {
+            background-color: #FFFF00;
+
+            .c5 {
+                display: none;
+            }
+
+            .c6 {
+                display: inline;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <caption>Colores RGB, al pasar el raton por encima, muestran el color complementario:</caption>
+            <tr>
+                <td class="td1"><span class="c1">Color rojo #FF0000</span><span class="c2">Color cyan #00FFFF</span>
+                </td>
+                <td class="td2"><span class="c3">Color verde #00FF00</span><span class="c4">Color magenta #FF00FF</span>
+                </td>
+                <td class="td3"><span class="c5">Color azul #0000FF</span><span class="c6">Color amarillo #FFFF00</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

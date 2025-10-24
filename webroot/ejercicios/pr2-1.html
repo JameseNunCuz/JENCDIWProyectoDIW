@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Maqueta simple (vw/vh) - Footer oscuro</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #dcdcdc;
+            color: #111;
+            font-size: 1.2vw;
+            line-height: 1.4
+        }
+
+        /*Header*/
+        header {
+            height: 10vh;
+            background: #bdbdbd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative
+        }
+
+        header img {
+            position: absolute;
+            top: 1.5vh;
+            width: 6.5vh;
+            height: 6.5vh;
+            object-fit: cover;
+        }
+
+        header img.left {
+            left: 2vw
+        }
+
+        header img.right {
+            right: 2vw
+        }
+
+        /*Main*/
+        main {
+            display: flex;
+            min-height: 66vh
+        }
+
+        .side {
+            width: 15vw;
+            background: #ff0040;
+            padding: 2vh 1vw;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center
+        }
+
+        .side .inner {
+            background: #fff;
+            color: #000;
+            width: 100%;
+            padding: 1vh;
+            font-size: 1.1vw
+        }
+
+        .content {
+            flex: 1;
+            background: #efefef;
+            padding: 4vh 6vw;
+            text-align: justify
+        }
+
+        .content h2 {
+            font-size: 1.8vw;
+            text-align: center;
+            margin-bottom: 1vh
+        }
+
+        .content h3 {
+            font-size: 1.4vw;
+            text-align: center;
+            margin: 1.5vh 0
+        }
+
+        .content p {
+            margin: 1vh 0
+        }
+
+        .comentarios {
+            font-style: italic;
+            text-align: center;
+            margin-top: 1vh
+        }
+
+        /* Footer*/
+        footer {
+            height: 8vh;
+            background: #4f4f4f;
+            color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+        }
+
+        footer .wrap {
+            width: 90%;
+            text-align: center;
+            font-size: 1.05vw
+        }
+
+        /*Progress bar*/
+        progress {
+            width: 40vw;
+            height: 1.2vh;
+            appearance: none;
+            -webkit-appearance: none;
+            border: none;
+            margin-top: .6vh
+        }
+
+        progress::-webkit-progress-bar {
+            background: #cfcfcf;
+            border-radius: 2vh
+        }
+
+        progress::-webkit-progress-value {
+            background: #1f39c8;
+            border-radius: 2vh
+        }
+
+        progress::-moz-progress-bar {
+            background: #1f39c8;
+            border-radius: 2vh
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img class="left" src="https://picsum.photos/80/80?random=21" alt="izquierda">
+        <h1>CABECERA</h1>
+        <img class="right" src="https://picsum.photos/80/80?random=22" alt="derecha">
+    </header>
+
+    <main>
+        <aside class="side">
+            <div class="inner">
+                <nav>
+                    <ul style="list-style:none">
+                        <li><a href="#" style="color:#0029a6;text-decoration:none">Inicio</a></li>
+                        <li><a href="#" style="color:#0029a6;text-decoration:none">Opciones</a></li>
+                        <li><a href="#" style="color:#0029a6;text-decoration:none">Servicios</a></li>
+                        <li><a href="#" style="color:#0029a6;text-decoration:none">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <section class="content">
+            <article>
+                <h2>Mi primer articulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, similique.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, sed?</p>
+            </article>
+
+            <article>
+                <h2>Mi segundo articulo</h2>
+                <h3>Subtitulo 2 articulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequuntur quisquam vero non eaque at
+                    sunt reprehenderit quas.</p>
+                <p class="comentarios">comentarios</p>
+            </article>
+
+            <article>
+                <h2>Mi tercer articulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, asperiores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam error adipisci architecto
+                    consectetur eaque doloremque voluptates magni?</p>
+                <p class="comentarios">comentarios</p>
+            </article>
+        </section>
+
+        <aside class="side">
+            <div class="inner">
+                <p>Aqui tenemos nuestra seccion de links interesantes</p>
+                <p>Elemento: details</p>
+                <ul>
+                    <li>Lista datos summary</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div>©Todos los derechos reservados.</div>
+            <div style="margin-top:.6vh">Progress:<progress value="48" max="100" aria-label="Progreso"></progress></div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

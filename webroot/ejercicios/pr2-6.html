@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 23-10-25</title>
+
+    <style>
+        .container1 {
+            position: absolute;
+            top: 3%;
+            left: 3%;
+
+            .topContainer {
+                font-size: 2.3em;
+            }
+
+            .rightTxt {
+                position: absolute;
+                right: 0%;
+
+                a {
+                    font-size: 0.8em;
+                    color: darkcyan;
+                }
+            }
+
+            .cajas {
+                display: flex;
+                flex-direction: row;
+
+                .box {
+                    position: relative;
+                    width: 300px;
+                    height: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: darkcyan;
+                    color: white;
+                    margin: 0.2em;
+                    align-items: center;
+
+
+                    p {
+                        text-align: center;
+                        margin: 0.25em;
+                        font-size: 2em;
+                        text-align: left;
+                    }
+
+                    a {
+                        position: absolute;
+                        bottom: 5%;
+                        left: 5%;
+                        color: lightblue;
+                        text-decoration: none;
+                    }
+
+                    img {
+                        position: absolute;
+                        top: 100%;
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+
+        .container2 {
+            position: absolute;
+            top: 3%;
+            right: 3%;
+
+            img {
+                width: 450px;
+                height: 150px;
+            }
+
+            .rb1 {
+                position: relative;
+                height: 125px;
+                width: 400px;
+
+                #rb1i1 {
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    height: 100px;
+                    width: 250px;
+                }
+
+                #rb1i2 {
+                    position: absolute;
+                    bottom: -10%;
+                    right: -15%;
+                    height: 150px;
+                    width: 200px;
+                }
+            }
+
+            p {
+                text-align: center;
+                font-size: 1.2em;
+            }
+        }
+
+        .container3 {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            bottom: 5%;
+            max-width: 100vw;
+            width: 100vw;
+
+            div {
+                position: relative;
+                transform: translate(-50%, -100%);
+                height: fit-content;
+                width: fit-content;
+
+                p {
+                    transform: translate(-50%, -50%);
+                    top: 40%;
+                    left: 50%;
+                    position: absolute;
+                    background-color: darkcyan;
+                    color: white;
+                }
+            }
+
+            img {
+                width: 300px;
+                height: 100px;
+            }
+
+            #c3d1 {
+                position: absolute;
+                left: 15%;
+            }
+
+            #c3d2 {
+                position: absolute;
+                left: 37.5%;
+            }
+
+            #c3d3 {
+                position: absolute;
+                left: 57.5%;
+            }
+
+            #c3d4 {
+                position: absolute;
+                left: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="cajas topContainer">
+            <div><strong>Novedades </strong>en formacion profesional</div>
+            <div class="rightTxt"><a>Ver todas...</a></div>
+        </div>
+
+        <div class="cajas">
+            <div>
+                <div class="box">
+                    <p>Ayudas complementarias al alumnado de FP Grado Superior beneficiario de becas Erasmus+
+                    </p>
+                    <a>LEER MAS></a>
+                    <img src="https://s1.significados.com/foto/europa-continente-mapa-cke.jpg?class=article">
+                </div>
+            </div>
+
+            <div class="box">
+                <p>
+                    Euroskills 2025
+                </p>
+                <a>LEER MAS ></a>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRicT07lMMkzNBfNaqFWUB9vH_K0JYX6ODZ1g&s">
+            </div>
+
+            <div class="box">
+                <p>Actividades formativas profesorado y formadores FP, año 2025
+                </p>
+                <a>LEER MAS ></a>
+                <img src="https://www.vhv.rs/dpng/d/610-6101113_clipboard-icon-png-transparent-png.png">
+            </div>
+
+            <div class="box">
+                <p>Premios Extraordinarios de Formación Profesional de Castilla y León
+                </p>
+                <a>LEER MAS ></a>
+                <img src="https://tezhost.com/wp-content/uploads/2025/08/credible-reputation.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="rb1">
+            <img id="rb1i1"
+                src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcST9VaV4w6VhhPUTnesvQS39KEuMhfWi80fXW-KWkrfJnP8R54w">
+            <img id="rb1i2"
+                src="https://media.licdn.com/dms/image/v2/D4D12AQGexgC0Pwm8kQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1697448582781?e=2147483647&v=beta&t=IqAcG_Kcpdlv7BwrMWkN0LYgsVynyOx73rzrCQp94Mw">
+        </div>
+        <div>
+            <img
+                src="https://lh6.googleusercontent.com/proxy/uu68H_kBSTvXNbU8Jg6PAsQyIFEXNI0L2io00P37BfppNyKhF-T8D5FqvqUZFvOtMvcIo1foLhSDtdRcdVZuktgmSqbTJpCD-cwzid8kRJxrxB4TPg">
+            <p>CICERON FCT</p>
+        </div>
+        <div>
+            <img
+                src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShZbbxFnxIKGHgNdU70lYYV5CFn1HyhfS7m72WsqtGgn7HD8je">
+            <p>Ciclos formativos online</p>
+        </div>
+        <div>
+            <img src="https://www.sierradelasnieves.es/wp-content/uploads/2017/03/sedeelectronica.jpg">
+            <p>SEDE ELECTRÖNICA <i>de Castilla y León</i></p>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div id="c3d1">
+            <img
+                src="https://fotografias.antena3.com/clipping/cmsimages01/2022/02/04/3D86420C-545F-4D82-8A69-7CC0FCC8C78B/hacer-bizum_63.jpg">
+            <p>NOTICIAS</p>
+        </div>
+        <div id="c3d2">
+            <img
+                src="https://d1nz2cwxocqem8.cloudfront.net/image/380230487157/image_bjh1jg8qvt5bh6i8003dr5i222/-FWEBP,Q75,-S3840">
+            <p>PREMIOS FP</p>
+        </div>
+        <div id="c3d3"><img
+                src="https://previews.123rf.com/images/gstockstudio/gstockstudio1402/gstockstudio140200631/26184254-applauding-to-you-group-of-young-people-sitting-together-at-the-table-and-applauding-to-you.jpg">
+            <p>EXCELENCIA</p>
+        </div>
+        <div id="c3d4">
+            <img
+                src="https://www.academiaguiu.com/blog/wp-content/uploads/2020/08/3333333Diseno-sin-titulo-3-1080x675-min.png">
+            <p>VI PLAN FP</p>
+        </div>
+    </div>
+</body>
+
+</html>
