@@ -9,16 +9,15 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="title">
-            <h1>Desarrollo de interfaces web</h1>
-        </div>
+    <header>
+        <h1>Desarrollo de interfaces web</h1>
+        
         <button class="home active" onclick="location.href = '../'"><img src="./webresources/home.png"></button>
-    </div>
+    </header>
 
-    <div class="center-container">
+    <main>
         <button onclick="location.href = './webroot/ejercicios/ejercicio1.html'" class="active"><p>Practica 1</p></button>
-        <button onclick="location.href = './webroot/ejercicios/ejercicio2.html'" class="active"><p>Practica 1</p></button>
+        <button onclick="location.href = './webroot/ejercicios/ejercicio2.html'" class="active"><p>Practica 2</p></button>
         <button onclick="location.href = './webroot/ejercicios/pr1-1-1.html'"  class="active"><p>Ejercicio 1-1-1</p></button>
         <button onclick="location.href = './webroot/ejercicios/pr1-1-2.html'" class="active"><p>Ejercicio 1-1-2</p></button>
         <button onclick="location.href = './webroot/ejercicios/pr1-2-1.html'" class="active"><p>Ejercicio 1-2-1</p></button>
@@ -28,11 +27,16 @@
         <button onclick="location.href = './webroot/ejercicios/pr2-4.html'" class="active"><p>Ejercicio 2-4</p></button>
         <button onclick="location.href = './webroot/ejercicios/pr2-5.html'" class="active"><p>Ejercicio 2-5</p></button>
         <button onclick="location.href = './webroot/ejercicios/pr2-6.html'" class="active"><p>Ejercicio 2-6</p></button>
-    </div>
+        <button onclick="location.href = './webroot/ejercicios/pr2-7.html'" class="active"><p>Ejercicio 2-7</p></button>
+        <button onclick="location.href = './webroot/ejercicios/pr2-7-b.html'" class="active"><p>Ejercicio 2-7B</p></button>
+        <button onclick="location.href = './webroot/ejercicios/pr2-8-1.html'" class="active"><p>Ejercicio 2-8</p></button>
+        <button onclick="location.href = './webroot/ejercicios/pr2-8-1b.html'" class="active"><p>Ejercicio 2-8B</p></button>
+        <button onclick="location.href = './webroot/examenes/EX-2-1/Ex-2-1.html'" class="active"><p>Examen 2-1</p></button>
+    </main>
 
-    <div class="footer">
-        <h3>James Edward Nuñez Cuzcano</h3>
-    </div>
+    <footer>
+        
+    </footer>
 </body>
 
 </html>

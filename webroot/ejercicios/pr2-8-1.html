@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR2-8-1</title>
+    <style>
+        article {
+            width: 500px;
+            height: 400px;
+            padding-top: 10px;
+            position: absolute;
+        }
+
+        nav {
+            position: relative;
+            padding-left: 12px;
+        }
+
+        a {
+            padding: 10px 20px 10px 20px;
+            height: 40px;
+            text-decoration: none;
+            border-radius: 10px 10px 0px 0px;
+            margin-right: 12px;
+            text-align: center;
+        }
+
+        #art1,
+        #a1 {
+            background-color: #67e767;
+        }
+
+        #art2,
+        #a2 {
+            background-color: #5077e3;
+        }
+
+        #art3,
+        #a3 {
+            background-color: #e7b8d7;
+        }
+
+        article:target {
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>A- Usando target y Z-index</h1>
+
+    <nav>
+        <a id="a1" href="#art1">Primera</a>
+        <a id="a2" href="#art2">Segunda</a>
+        <a id="a3" href="#art3">Tercera</a>
+    </nav>
+
+    <article id="art1">Este es el contenido de la 1 PESTAÑA</article>
+    <article id="art2">Este es el contenido de la 2 PESTAÑA</article>
+    <article id="art3">Este es el contenido de la 3 PESTAÑA</article>
+
+</body>
+
+</html>

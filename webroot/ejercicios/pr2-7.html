@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr2-7</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        #top {
+            position: relative;
+
+            >div {
+                width: 33.333%;
+                text-align: center;
+                position: relative;
+            }
+
+            #topleft {
+                background-color: darkgreen;
+                float: inline-start;
+            }
+
+            #topmid {
+                background-color: darkcyan;
+                float: inline-start;
+            }
+
+            #topright {
+                background-color: darkmagenta;
+                float: inline-start;
+            }
+        }
+
+        #mid {
+            position: relative;
+            float: inline-start;
+            height: 70vh;
+            width: 100%;
+
+            >div {
+                position: relative;
+                height: inherit;
+            }
+
+            #midleft {
+                background-color: darkcyan;
+                color: white;
+                width: 25%;
+                float: inline-start;
+
+                ul {
+                    list-style-type: none;
+                    padding: 0%;
+                    width: 100%;
+
+                    li {
+                        border: 1px solid salmon;
+                    }
+                }
+            }
+
+            #midmid {
+                width: 55%;
+                float: inline-start;
+
+                img {
+                    position: absolute;
+                    right: 1%;
+                    bottom: 5%;
+                }
+
+                p {
+                    position: absolute;
+                    left: 1%;
+                    bottom: 5%;
+                    width: 30%
+                }
+
+                >div {
+                    position: relative;
+                    float: inline-start;
+                    width: 100%;
+                }
+
+                #midmid1 {
+                    background-color: lightblue;
+                    height: 30%
+                }
+
+                #midmid2 {
+                    background-color: rgb(93, 170, 130);
+
+                    height: 40%;
+
+                    img {
+                        bottom: 25%
+                    }
+
+                    #pespecial {
+                        left: 90%;
+                        font-weight: bold;
+                    }
+
+                    h1,
+                    h2 {
+                        position: relative;
+                        left: 35%
+                    }
+                }
+
+                #midmid3 {
+                    background-color: lightblue;
+                    height: 30%
+                }
+
+            }
+
+            #midright {
+                background-color: darkorange;
+                color: white;
+                position: relative;
+                width: 20%;
+                float: right;
+            }
+        }
+
+        #bottom {
+            background-color: yellow;
+            width: 100vw;
+            text-align: center;
+            position: relative;
+            float: inline-start;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <div id="topleft">
+            <h2>🏭Logo empresa🗽</h2>
+        </div>
+
+        <div id="topmid">
+            <h2>🔍 Buscar</h2>
+        </div>
+
+        <div id="topright">
+            <h2>🙍🏿 Cuenta, 🛒 cesta</h2>
+        </div>
+    </div>
+
+    <div id="mid">
+        <div id="midleft">
+            <ul>
+                <li>Opcion 1</li>
+                <li>Opcion 2</li>
+                <li>Opcion 3</li>
+                <li>Opcion 4</li>
+            </ul>
+        </div>
+
+        <div id="midmid">
+            <div id="midmid1">
+                <h1>Mi articulo 1</h1>
+                <p>Lorem ipsum dolor sir amet consecteurpariatur</p>
+                <img src="https://picsum.photos/id/175/100">
+            </div>
+
+            <div id="midmid2">
+                <h1>Mi articulo &lt; 2 &gt;</h1>
+                <h2>Subtitulo 2 articulo</h2>
+                <p>Contenido del article 2</p>
+                <img src="https://picsum.photos/id/8/100">
+                <p id="pespecial">Links</p>
+            </div>
+
+            <div id="midmid3">
+                <h1>Mi articulo 3</h1>
+                <p>Lorem ipsum dolor sir amet consecteurpariatur</p>
+                <img src="https://picsum.photos/id/8/100">
+            </div>
+        </div>
+
+        <div id="midright">
+            <p>Aqui tenemos nuestra seccion de links interesantes</p>
+            <a href="">Link 1</a> <a href="">Link 2</a> ...</p>
+        </div>
+    </div>
+
+    <div id="bottom">
+        <p>Diseño de interfaces web</p>
+    </div>
+</body>
+
+</html>
