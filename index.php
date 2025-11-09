@@ -11,8 +11,6 @@
 <body>
     <header>
         <h1>Desarrollo de interfaces web</h1>
-        
-        <button class="home active" onclick="location.href = '../'"><img src="./webresources/home.png"></button>
     </header>
 
     <main>
@@ -35,7 +33,12 @@
     </main>
 
     <footer>
-        
+                <h2>James Edward Nuñez Cuzcano</h2>
+        <div>
+            <button class="active" onclick="window.open('https://github.com/JameseNunCuz')"><img
+                    src="./webresources/github.png"></button>
+            <button class="active" onclick="location.href = '../'"><img src="./webresources/home.png"></button>
+        </div>
     </footer>
 </body>
 
